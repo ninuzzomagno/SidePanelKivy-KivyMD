@@ -23,12 +23,19 @@ Builder.load_string('''
         pos_hint:{'center_x':0.5,'center_y':0.2}
         size_hint:0.5,0.1
         text:"Push me"
+        disabled:p.opened
         on_press:print("pressed")
 
     MDSidePanel:
         size_hint_xP:0.8
         side:"left"
         color:[1,1,1,1]
+        id:p
+
+        Label:
+            color:0,0,0,1
+            text:"Side panel is open"
+            pos_hint:{'center_x':0.5,'center_y':0.5}
 
 ''')
 
