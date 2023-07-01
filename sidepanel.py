@@ -146,8 +146,8 @@ Builder.load_string('''
                 
     PanelButton:
         id:btn
-        size_hint:0.11,None
-        height:self.width
+        size_hint:None,0.065
+        width:self.height
         pos_hint: {'center_x': 0.92*(root.side == "right")+(root.side == "left")*0.08,'center_y': 0.95}
         direction:root.side
         on_release:root.toggle()
