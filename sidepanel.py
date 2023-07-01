@@ -54,7 +54,7 @@ class MDSidePanel(MDScreen):
         i = 0
         for child in MDApp.get_running_app().root.current_screen.children:
             if i!=0:
-                child.disabled = (self.open == True)
+                child.disabled = (self.opened == True)
             i+=1
 
     def open(self):
